@@ -1,0 +1,141 @@
+{
+  "districts": [
+      {
+        "name": "Bajali",
+        "institutions": ["Bajali College", "Bajali Higher Secondary School"]
+      },
+      {
+        "name": "Baksa",
+        "institutions": ["Baksa College", "Baksa Higher Secondary School"]
+      },
+      {
+        "name": "Barpeta",
+        "institutions": ["Barpeta College", "Barpeta Higher Secondary School"]
+      },
+      {
+        "name": "Biswanath",
+        "institutions": ["Biswanath College", "Biswanath Higher Secondary School"]
+      },
+      {
+        "name": "Bongaigaon",
+        "institutions": ["Bongaigaon College", "Bongaigaon Higher Secondary School"]
+      },
+      {
+        "name": "Cachar",
+        "institutions": ["Cachar College", "Cachar Higher Secondary School"]
+      },
+      {
+        "name": "Charaideo",
+        "institutions": ["Charaideo College", "Charaideo Higher Secondary School"]
+      },
+      {
+        "name": "Chirang",
+        "institutions": ["Chirang College", "Chirang Higher Secondary School"]
+      },
+      {
+        "name": "Darrang",
+        "institutions": ["Darrang College", "Darrang Higher Secondary School"]
+      },
+      {
+        "name": "Dhemaji",
+        "institutions": ["Dhemaji College", "Dhemaji Higher Secondary School"]
+      },
+      {
+        "name": "Dhubri",
+        "institutions": ["Dhubri College", "Dhubri Higher Secondary School"]
+      },
+      {
+        "name": "Dibrugarh",
+        "institutions": ["Dibrugarh University", "Dibrugarh Polytechnic"]
+      },
+      {
+        "name": "Dima Hasao",
+        "institutions": ["Dima Hasao College", "Dima Hasao Higher Secondary School"]
+      },
+      {
+        "name": "Goalpara",
+        "institutions": ["Goalpara College", "Goalpara Higher Secondary School"]
+      },
+      {
+        "name": "Golaghat",
+        "institutions": ["Golaghat College", "Golaghat Higher Secondary School"]
+      },
+      {
+        "name": "Hailakandi",
+        "institutions": ["Hailakandi College", "Hailakandi Higher Secondary School"]
+      },
+      {
+        "name": "Hojai",
+        "institutions": ["Hojai College", "Hojai Higher Secondary School"]
+      },
+      {
+        "name": "Jorhat",
+        "institutions": ["Jorhat College", "Jorhat Engineering College"]
+      },
+      {
+        "name": "Kamrup Metropolitan",
+        "institutions": ["Gauhati University", "Indian Institute of Technology Guwahati"]
+      },
+      {
+        "name": "Kamrup",
+        "institutions": ["Kamrup College", "Kamrup Higher Secondary School"]
+      },
+      {
+        "name": "Karbi Anglong",
+        "institutions": ["Karbi Anglong College", "Karbi Anglong Higher Secondary School"]
+      },
+      {
+        "name": "Karimganj",
+        "institutions": ["Karimganj College", "Karimganj Higher Secondary School"]
+      },
+      {
+        "name": "Kokrajhar",
+        "institutions": ["Kokrajhar College", "Kokrajhar Higher Secondary School"]
+      },
+      {
+        "name": "Lakhimpur",
+        "institutions": ["Lakhimpur College", "Lakhimpur Higher Secondary School"]
+      },
+      {
+        "name": "Majuli",
+        "institutions": ["Majuli College", "Majuli Higher Secondary School"]
+      },
+      {
+        "name": "Morigaon",
+        "institutions": ["Morigaon College", "Morigaon Higher Secondary School"]
+      },
+      {
+        "name": "Nagaon",
+        "institutions": ["Nagaon College", "Nagaon Higher Secondary School"]
+      },
+      {
+        "name": "Nalbari",
+        "institutions": ["Nalbari College", "Nalbari Higher Secondary School"]
+      },
+      {
+        "name": "Sivasagar",
+        "institutions": ["Sivasagar College", "Sivasagar Higher Secondary School"]
+      },
+      {
+        "name": "Sonitpur",
+        "institutions": ["Tezpur University", "Darrang College"]
+      },
+      {
+        "name": "South Salmara-Mankachar",
+        "institutions": ["South Salmara College", "South Salmara Higher Secondary School"]
+      },
+      {
+        "name": "Tinsukia",
+        "institutions": ["Tinsukia College", "Tinsukia Higher Secondary School"]
+      },
+      {
+        "name": "Udalguri",
+        "institutions": ["Udalguri College", "Udalguri Higher Secondary School"]
+      },
+      {
+        "name": "West Karbi Anglong",
+        "institutions": ["West Karbi Anglong College", "West Karbi Anglong Higher Secondary School"]
+      }
+    ]
+  }
+  
