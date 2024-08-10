@@ -23,7 +23,7 @@ const __dirname = dirname(__filename);
 const app = express();
 
 // Serve static files from the "dist" directory
-app.use(express.static(path.join(__dirname, "./dist")));
+app.use(express.static(path.join(__dirname, "./client/dist")));
 
 // Middleware
 app.use(bodyParser.json());
@@ -69,5 +69,5 @@ app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
 // Serve the index.html file for any other route (for Single Page Application support)
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./dist/index.html"));
+  res.sendFile(path.join(__dirname, "./client/dist/index.html"));
 });
