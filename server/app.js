@@ -30,7 +30,8 @@ app.use(bodyParser.json());
 app.use(cookieParser()); // Add cookie-parser middleware for authentication
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "*",
+    methods: ["GET", "POST"],
     credentials: true,
   })
 );
