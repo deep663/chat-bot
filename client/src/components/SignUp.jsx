@@ -143,14 +143,9 @@ function SignUp() {
                   className="border border-gray-400 py-2 px-4 rounded"
                   onChange={(e) => setUserRole(e.target.value.toString())}
                 >
-                  <option defaultChecked>
-                    Select Your Role
-                  </option>
+                  <option defaultChecked>Select Your Role</option>
                   {roles.map((role, index) => (
-                    <option
-                      key={index}
-                      value={role}
-                    >
+                    <option key={index} value={role}>
                       {role}
                     </option>
                   ))}
@@ -166,14 +161,9 @@ function SignUp() {
                 className="border border-gray-400 py-2 px-4 rounded"
                 onChange={handleDistrictChange}
               >
-                <option defaultChecked>
-                  Select Your District
-                </option>
+                <option defaultChecked>Select Your District</option>
                 {districtsData.map((district, index) => (
-                  <option
-                    key={index}
-                    value={district.name}
-                  >
+                  <option key={index} value={district.name}>
                     {district.name}
                   </option>
                 ))}
@@ -192,10 +182,7 @@ function SignUp() {
                   Select Your Institution
                 </option>
                 {filteredInstitutions.map((institution, index) => (
-                  <option
-                    key={index}
-                    value={institution}
-                  >
+                  <option key={index} value={institution}>
                     {institution}
                   </option>
                 ))}
@@ -251,7 +238,8 @@ function SignUp() {
               <a
                 href="/login"
                 className="text-blue-500 hover:underline cursor-pointer"
-              >{" "}
+              >
+                {" "}
                 Login
               </a>
             </p>
@@ -260,12 +248,13 @@ function SignUp() {
       </div>
       {success && (
         <div
-        className="bg-green-200 border-green-600 text-green-600 border-l-4 p-4"
-        role="alert"
-      >
-        <p className="font-bold">Success</p>
-        <p>You have successfully registered.</p>
-      </div>)}
+          className="bg-green-200 border-green-600 text-green-600 border-l-4 p-4"
+          role="alert"
+        >
+          <p className="font-bold">Success</p>
+          <p>You have successfully registered.</p>
+        </div>
+      )}
     </div>
   );
 }

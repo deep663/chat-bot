@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { useDropzone } from "react-dropzone";
-import Logo from "../assets/chat-bot.png"
+import Logo from "../assets/chat-bot.png";
 
 const AdminPage = () => {
   const [files, setFiles] = useState([]);
@@ -19,7 +19,8 @@ const AdminPage = () => {
     });
 
     try {
-      const response = await axios.post("http://localhost:5000/api/upload/csv",
+      const response = await axios.post(
+        "http://localhost:5000/api/upload/csv",
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },
@@ -35,7 +36,7 @@ const AdminPage = () => {
 
   const { getRootProps, getInputProps } = useDropzone({
     onDrop,
-    accept: {"text/csv":['.csv']}
+    accept: { "text/csv": [".csv"] },
   });
 
   return (
@@ -47,7 +48,7 @@ const AdminPage = () => {
             Chat Bot Admin
           </h2>
         </div>
-        </div>
+      </div>
       <div className="bg-white shadow-md rounded-lg p-6 w-full max-w-lg">
         <h1 className="text-2xl font-bold mb-6 text-gray-800 text-center">
           Upload
@@ -111,7 +112,11 @@ const AdminPage = () => {
           </p>
         )}
         <button
-          className={`w-full py-2 px-4 rounded-md transition duration-200 mt-4 ${files.length === 0 ? 'bg-gray-300 text-gray-500 cursor-not-allowed' : 'bg-blue-500 text-white hover:bg-blue-600'}`}
+          className={`w-full py-2 px-4 rounded-md transition duration-200 mt-4 ${
+            files.length === 0
+              ? "bg-gray-300 text-gray-500 cursor-not-allowed"
+              : "bg-blue-500 text-white hover:bg-blue-600"
+          }`}
           onClick={handleUpload}
           disabled={files.length === 0}
         >

@@ -68,14 +68,18 @@ const Main = () => {
 
   const saveFeedback = async (feedbackData) => {
     // console.log("Saving feedback:", feedbackData);
-    const response = await axios.post("http://localhost:5000/api/questions",{
-      name: feedbackData.user,
-      askedQuestion: feedbackData.question,
-      answer: feedbackData.response,
-      feedback: feedbackData.rating,
-    }, {
-      withCredentials: true, // Ensure cookies are sent
-    });
+    const response = await axios.post(
+      "http://localhost:5000/api/questions",
+      {
+        name: feedbackData.user,
+        askedQuestion: feedbackData.question,
+        answer: feedbackData.response,
+        feedback: feedbackData.rating,
+      },
+      {
+        withCredentials: true, // Ensure cookies are sent
+      }
+    );
     if (response.status === 201) {
       console.log(response.data);
     } else {
@@ -131,7 +135,10 @@ const Main = () => {
                 Settings
               </a>
               <a
-                onClick={() => {signout(); window.location.reload();}}
+                onClick={() => {
+                  signout();
+                  window.location.reload();
+                }}
                 className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                 role="menuitem"
               >

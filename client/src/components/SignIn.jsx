@@ -7,7 +7,6 @@ import { useNavigate } from "react-router-dom";
 import useSignIn from "react-auth-kit/hooks/useSignIn";
 
 function SignIn() {
-
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showAlert, setShowAlert] = useState(false);
@@ -17,11 +16,14 @@ function SignIn() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/api/users/login", {
-        Email: email,
-        Password: password,
-      });
-      if(response.data) {
+      const response = await axios.post(
+        "http://localhost:5000/api/users/login",
+        {
+          Email: email,
+          Password: password,
+        }
+      );
+      if (response.data) {
         signin({
           auth: {
             token: response.data.token,
@@ -31,7 +33,6 @@ function SignIn() {
         });
         localStorage.setItem("user", response.data.name);
         navigate("/");
-
       }
     } catch (error) {
       setShowAlert(true);
@@ -82,25 +83,25 @@ function SignIn() {
                   className="border border-gray-400 py-2 px-4 rounded"
                 />
               </div>
-              
+
               {showAlert && (
-              <div
-                className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative"
-                role="alert"
-              >
-                <strong className="font-bold">Unauthorized!</strong>
-                <span className="block sm:inline">
-                  {" "}
-                  Wrong Email id or password.
-                </span>
-                <span
-                  className="absolute top-0 bottom-0 right-0 px-4 py-3 hover:cursor-pointer"
-                  onClick={() => setShowAlert(false)}
+                <div
+                  className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative"
+                  role="alert"
                 >
-                  <XMarkIcon width={24} />
-                </span>
-              </div>
-            )}
+                  <strong className="font-bold">Unauthorized!</strong>
+                  <span className="block sm:inline">
+                    {" "}
+                    Wrong Email id or password.
+                  </span>
+                  <span
+                    className="absolute top-0 bottom-0 right-0 px-4 py-3 hover:cursor-pointer"
+                    onClick={() => setShowAlert(false)}
+                  >
+                    <XMarkIcon width={24} />
+                  </span>
+                </div>
+              )}
 
               <div className="flex justify-between items-center mb-4">
                 <div className="flex items-center">
